@@ -1,0 +1,6 @@
+@Vkart.Services.CouponAPI_HostAddress = http://localhost:5030
+
+GET {{Vkart.Services.CouponAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
