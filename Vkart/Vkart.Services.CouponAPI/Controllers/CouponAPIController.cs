@@ -6,7 +6,7 @@ using Vkart.Services.CouponAPI.Models.DTOs;
 
 namespace Vkart.Services.CouponAPI.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/coupon")]
     [ApiController]
     public class CouponAPIController : Controller
     {
@@ -31,7 +31,7 @@ namespace Vkart.Services.CouponAPI.Controllers
             }
             catch (Exception ex)
             {
-                _responseDto.IsSUccess = false;
+                _responseDto.IsSuccess = false;
                 _responseDto.Message = ex.Message;
             }
             return _responseDto;
@@ -49,7 +49,7 @@ namespace Vkart.Services.CouponAPI.Controllers
             }
             catch (Exception ex)
             {
-                _responseDto.IsSUccess = false;
+                _responseDto.IsSuccess = false;
                 _responseDto.Message = ex.Message;
             }
             return _responseDto;
@@ -64,14 +64,14 @@ namespace Vkart.Services.CouponAPI.Controllers
                 Coupon objList = _db.Coupons.FirstOrDefault(x => x.Couponcode.ToLower() == code.ToLower());
                 if(objList == null)
                 {
-                    _responseDto.IsSUccess=false;
+                    _responseDto.IsSuccess=false;
                 }
                 _responseDto.Result = _mapper.Map<CouponDto>(objList);
 
             }
             catch (Exception ex)
             {
-                _responseDto.IsSUccess = false;
+                _responseDto.IsSuccess = false;
                 _responseDto.Message = ex.Message;
             }
             return _responseDto;
@@ -90,7 +90,7 @@ namespace Vkart.Services.CouponAPI.Controllers
             }
             catch (Exception ex)
             {
-                _responseDto.IsSUccess = false;
+                _responseDto.IsSuccess = false;
                 _responseDto.Message = ex.Message;
             }
             return _responseDto;
@@ -109,12 +109,13 @@ namespace Vkart.Services.CouponAPI.Controllers
             }
             catch (Exception ex)
             {
-                _responseDto.IsSUccess = false;
+                _responseDto.IsSuccess = false;
                 _responseDto.Message = ex.Message;
             }
             return _responseDto;
         }
         [HttpDelete]
+        [Route("{id:int}")]
         public ResponseDto DeleteCoupon(int id)
         {
             try
@@ -125,7 +126,7 @@ namespace Vkart.Services.CouponAPI.Controllers
             }
             catch (Exception ex)
             {
-                _responseDto.IsSUccess = false;
+                _responseDto.IsSuccess = false;
                 _responseDto.Message = ex.Message;
             }
             return _responseDto;

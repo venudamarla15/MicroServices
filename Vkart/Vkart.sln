@@ -11,7 +11,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integration", "Integration"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{D6D55ED8-8704-4D92-9E9A-A1BD0979D82E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vkart.Services.CouponAPI", "Vkart.Services.CouponAPI\Vkart.Services.CouponAPI.csproj", "{E2E7B369-622E-494A-B08A-9E0B3811D07A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vkart.Services.CouponAPI", "Vkart.Services.CouponAPI\Vkart.Services.CouponAPI.csproj", "{E2E7B369-622E-494A-B08A-9E0B3811D07A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vkart.Web", "Vkart.Web\Vkart.Web.csproj", "{AC365DB9-8E57-4E2B-86D2-07D2F75A088B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vkart.Services.AuthAPI", "Vkart.Services.AuthAPI\Vkart.Services.AuthAPI.csproj", "{2DEEE0ED-9690-4184-AB6A-83AC59BEDF13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,12 +27,22 @@ Global
 		{E2E7B369-622E-494A-B08A-9E0B3811D07A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2E7B369-622E-494A-B08A-9E0B3811D07A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2E7B369-622E-494A-B08A-9E0B3811D07A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC365DB9-8E57-4E2B-86D2-07D2F75A088B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC365DB9-8E57-4E2B-86D2-07D2F75A088B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC365DB9-8E57-4E2B-86D2-07D2F75A088B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC365DB9-8E57-4E2B-86D2-07D2F75A088B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DEEE0ED-9690-4184-AB6A-83AC59BEDF13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DEEE0ED-9690-4184-AB6A-83AC59BEDF13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DEEE0ED-9690-4184-AB6A-83AC59BEDF13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DEEE0ED-9690-4184-AB6A-83AC59BEDF13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E2E7B369-622E-494A-B08A-9E0B3811D07A} = {D6D55ED8-8704-4D92-9E9A-A1BD0979D82E}
+		{AC365DB9-8E57-4E2B-86D2-07D2F75A088B} = {054C7D27-3AB3-4E40-BF8E-A5AD69355E13}
+		{2DEEE0ED-9690-4184-AB6A-83AC59BEDF13} = {D6D55ED8-8704-4D92-9E9A-A1BD0979D82E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D36193E0-8200-41A4-B25A-F75FD1B06B02}

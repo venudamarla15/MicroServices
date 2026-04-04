@@ -1,4 +1,4 @@
-﻿namespace Vkart.Services.CouponAPI.Models.DTOs
+﻿namespace Vkart.Web.Models
 {
     public class ResponseDto
     {
